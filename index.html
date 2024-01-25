@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="./icon.jpg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <div class="screen_prev" id="prevOper">
+               
+            </div>
+
+            <div class="screen_curr" id="currOper">
+                
+            </div>
+      
+        </div>   <!-- div ending for screen class -->
+
+        <div class="btnGrid">
+            <button class="btn span2" id="clrBtn">
+                CLR
+            </button>
+
+            <button class="btn span2" id="delBtn">
+                DEL
+            </button>
+
+            <button class="btn" onclick="this.blur" data-num>7</button>
+            <button class="btn" onclick="this.blur" data-num>8</button>
+            <button class="btn" onclick="this.blur" data-num>9</button>
+            <button class="btn" onclick="this.blur" data-oper>+</button>
+
+            <button class="btn" onclick="this.blur" data-num>4</button>
+            <button class="btn" onclick="this.blur" data-num>5</button>
+            <button class="btn" onclick="this.blur" data-num>6</button>
+            <button class="btn" onclick="this.blur" data-oper>-</button>
+
+            <button class="btn" onclick="this.blur" data-num>1</button>
+            <button class="btn" onclick="this.blur" data-num>2</button>
+            <button class="btn" onclick="this.blur" data-num>3</button>
+            <button class="btn" onclick="this.blur" data-oper>×</button>
+
+            <button class="btn" onclick="this.blur" id="decimal">.</button>
+            <button class="btn" onclick="this.blur" data-num>0</button>
+            <button class="btn" onclick="this.blur" id="equal">=</button>
+            <button class="btn" onclick="this.blur" data-oper>÷</button>
+
+
+         </div> <!--div ending for btnGrid class -->
+
+
+    </div>      <!-- div ending for calculator class -->
+
+    <script src="./script.js"></script>
+</body>
+</html>

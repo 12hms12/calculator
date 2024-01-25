@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body, button {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: rgb(111, 143, 175);
+}
+
+.calculator {
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    gap: 5%;
+    flex-direction: column; /* Added to make the children stack vertically */
+}
+
+.screen {
+    word-wrap: break-word;
+    text-align: right;
+    gap: 3px;
+    order: 1; /* Adjusted order property */
+}
+
+.screen_prev {
+    font-size: small;
+}
+
+.screen_curr {
+    font-size: x-large;
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75%;
+    order: 2; /* Adjusted order property */
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+#clrBtn {
+    background-color: #EE4B2B;
+}
+
+#clrBtn:hover {
+    background-color: rgb(130, 0, 0);
+}
+
+#delBtn {
+    background-color: #40ff00;
+}
+
+#delBtn:hover {
+    background-color: darkgreen;
+}
+
+.btn {
+    border: solid 2px black;
+    background-color: skyblue;
+    padding: 1rem;
+    border-radius: 7.5%;
+    font-size: larger;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(21, 142, 255);
+}
